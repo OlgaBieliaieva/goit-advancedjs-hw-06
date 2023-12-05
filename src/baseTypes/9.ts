@@ -1,8 +1,9 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+// type full = page & details;
 
-type page = {
+type full = {
   title: string;
   likes: number;
   accounts: string[];
@@ -13,8 +14,8 @@ type page = {
   };
 };
 
-// type full = page & details;
-const page1: page = {
+
+const page1: full = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -25,7 +26,7 @@ const page1: page = {
   },
 };
 
-const page2: page = {
+const page2: full = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],

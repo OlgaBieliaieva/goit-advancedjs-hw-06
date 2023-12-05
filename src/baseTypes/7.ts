@@ -12,10 +12,10 @@ enum WeekDays {
   Sat,
   Sun,
 }
-const weekend = [WeekDays.Sat, WeekDays.Sun];
+let weekend = [WeekDays.Sat, WeekDays.Sun];
 
 function isWeekend(day: WeekDays): boolean {
-  const result = weekend.includes(day);
-  return result;
+  
+  return weekend.includes(day);
 }
 isWeekend(WeekDays.Fri);
